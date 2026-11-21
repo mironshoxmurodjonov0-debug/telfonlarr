@@ -1,0 +1,6 @@
+{
+  "name": "Olov Mobil",
+  "description": "Olovrang, oq va qora dizayndagi zamonaviy mobil do'kon: interaktiv menyu, onlayn buyurtma, Telegram kanal integratsiyasi va admin panel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

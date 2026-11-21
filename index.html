@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Olov Mobil — Zamonaviy Smartfonlar va Onlayn Buyurtma</title>
+    <meta
+      name="description"
+      content="Olovrang, oq va qora dizayndagi zamonaviy mobil do'kon: interaktiv menyu, tezkor onlayn buyurtma va real vaqt rejimida Telegram kanal bildirishnomalari."
+    />
+    <meta property="og:title" content="Olov Mobil — Zamonaviy Smartfonlar va Onlayn Buyurtma" />
+    <meta
+      property="og:description"
+      content="Olovrang, oq va qora dizayndagi zamonaviy mobil do'kon: interaktiv menyu, tezkor onlayn buyurtma va Telegram bildirishnomalari."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Outfit:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body class="bg-white text-[#0B0B0D] antialiased selection:bg-[#FF5500] selection:text-white">
+    <!-- Top Bar (3-Zone Single Row Contract) -->
+    <header class="sticky top-0 z-40 h-[56px] md:h-[68px] bg-white/95 backdrop-blur-md border-b border-black/10">
+      <div class="max-w-[1200px] mx-auto h-full px-4 sm:px-6 flex items-center justify-between gap-4 md:gap-8">
+        <!-- Zone 1: Single-line Brand Wordmark -->
+        <a
+          href="#top"
+          class="font-display text-lg md:text-xl font-bold tracking-tight text-[#0B0B0D] whitespace-nowrap shrink-0 flex items-center gap-2 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#E24700]"
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="4" y="2" width="16" height="20" rx="3.5" stroke="#0B0B0D" stroke-width="2" />
+            <rect x="8" y="6" width="8" height="8" rx="1.5" fill="#FF5500" />
+            <line x1="10" y1="18" x2="14" y2="18" stroke="#0B0B0D" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <span>OLOV <span class="text-[#E24700]">MOBIL</span></span>
+        </a>
+
+        <!-- Zone 2: 4 Single-line Nav Links -->
+        <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-[#52525B]" aria-label="Asosiy navigatsiya">
+          <a href="#katalog" class="hover:text-[#0B0B0D] transition-colors whitespace-nowrap shrink-0">Katalog</a>
+          <button
+            type="button"
+            id="nav-menu-btn"
+            class="hover:text-[#0B0B0D] transition-colors whitespace-nowrap shrink-0 cursor-pointer"
+          >
+            Interaktiv menyu
+          </button>
+          <a href="#afzalliklar" class="hover:text-[#0B0B0D] transition-colors whitespace-nowrap shrink-0">Afzalliklar</a>
+          <button
+            type="button"
+            id="nav-admin-btn"
+            class="hover:text-[#0B0B0D] transition-colors whitespace-nowrap shrink-0 cursor-pointer"
+          >
+            Admin panel
+          </button>
+        </nav>
+
+        <!-- Zone 3: 1 Primary Action -->
+        <div class="flex items-center shrink-0">
+          <button
+            type="button"
+            id="open-cart-btn"
+            class="min-h-[42px] px-4 py-2 rounded-lg bg-[#0B0B0D] hover:bg-[#1F1F24] text-white text-sm font-semibold inline-flex items-center gap-2.5 transition-colors whitespace-nowrap shrink-0 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E24700]"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M6 7h12l-1 12H7L6 7Z" />
+              <path d="M9 7V5a3 3 0 0 1 6 0v2" />
+            </svg>
+            <span>Savat</span>
+            <span id="header-cart-count" class="font-mono text-xs px-1.5 py-0.5 rounded bg-[#E24700] text-white tabular-nums">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top" class="pb-20 md:pb-0">
+      <!-- 1. Hero Showcase (Obsidian Black Canvas) -->
+      <section class="bg-[#0B0B0D] text-white">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6 pt-10 pb-12 md:pt-14 md:pb-16">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
+            <div class="lg:col-span-6 flex flex-col justify-center">
+              <p class="text-xs font-medium tracking-wide text-[#FF6B2B] mb-3">
+                Yangi avlod mobil texnologiyalari · Toshkent
+              </p>
+              <h1 class="hero-headline font-display font-bold tracking-tight text-white mb-5">
+                Flagman smartfonlar. Bir zumda buyurtma.
+              </h1>
+              <p class="text-base text-[#B4B4BC] leading-relaxed max-w-xl mb-8">
+                Eng so‘nggi smartfonlar, simsiz quloqchinlar va aqlli soatlarni qulay interaktiv menyu orqali tanlang. Har bir buyurtma real vaqt rejimida Telegram kanalimizga uzatiladi.
+              </p>
+              <div class="flex flex-wrap items-center gap-4">
+                <a
+                  href="#katalog"
+                  class="min-h-[48px] px-6 py-3 rounded-lg bg-[#E24700] hover:bg-[#C93E00] text-white text-sm font-semibold inline-flex items-center gap-2 transition-colors whitespace-nowrap shrink-0"
+                >
+                  <span>Katalogni ko‘rish</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                    <path d="M5 12h14M13 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <button
+                  type="button"
+                  id="hero-menu-btn"
+                  class="min-h-[48px] px-5 py-3 rounded-lg border border-white/20 hover:border-white/40 text-white text-sm font-medium inline-flex items-center gap-2 transition-colors whitespace-nowrap shrink-0 cursor-pointer"
+                >
+                  <span>Interaktiv menyu</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="lg:col-span-6">
+              <div class="relative w-full aspect-[16/10] lg:h-full rounded-2xl overflow-hidden bg-[#16161A] border border-white/10">
+                <img
+                  src="/src/assets/images/hero_flagship_phone_1795241777804.jpg"
+                  alt="Olov Mobil flagman qora va olovrang aksentli smartfon"
+                  referrerpolicy="no-referrer"
+                  class="w-full h-full object-cover"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                />
+                <div class="hidden absolute inset-0 items-center justify-center flex-col gap-2 bg-[#16161A] text-white/70 p-6 text-center">
+                  <span class="font-display font-semibold text-lg">Olov Pro 16 Titanium</span>
+                  <span class="text-xs text-white/50">Flagman seriya</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Full-width 4-column Guarantee Strip -->
+          <div class="mt-10 pt-8 border-t border-white/10 grid grid-cols-2 lg:grid-cols-4 gap-6">
+            <div>
+              <p class="text-xs text-[#9E9EA8] mb-1">Rasmiy kafolat</p>
+              <p class="font-display text-lg font-semibold text-white tabular-nums">12 oylik himoya</p>
+            </div>
+            <div>
+              <p class="text-xs text-[#9E9EA8] mb-1">Tezkor yetkazish</p>
+              <p class="font-display text-lg font-semibold text-white tabular-nums">2 soatda Toshkentda</p>
+            </div>
+            <div>
+              <p class="text-xs text-[#9E9EA8] mb-1">Jonli Telegram aloqa</p>
+              <p class="font-display text-lg font-semibold text-white">Real vaqt nazorati</p>
+            </div>
+            <div>
+              <p class="text-xs text-[#9E9EA8] mb-1">Qulay to‘lov</p>
+              <p class="font-display text-lg font-semibold text-white tabular-nums">Naqd · Click · Payme</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Interactive Menu & Product Catalog (Crisp White Canvas) -->
+      <section id="katalog" class="bg-white py-12 md:py-16">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+            <div>
+              <p class="text-xs font-semibold text-[#E24700] mb-1.5">Interaktiv katalog</p>
+              <h2 class="font-display text-2xl sm:text-3xl font-bold tracking-tight text-[#0B0B0D]">
+                Qurilmalar va aksessuarlar
+              </h2>
+            </div>
+
+            <!-- Search & Sort Controls -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full md:w-auto">
+              <div class="relative flex-1 sm:w-64">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#71717A"
+                  stroke-width="2"
+                  class="absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none"
+                  aria-hidden="true"
+                >
+                  <circle cx="11" cy="11" r="7" />
+                  <path d="m20 20-3.5-3.5" />
+                </svg>
+                <input
+                  id="catalog-search"
+                  type="search"
+                  placeholder="Model bo‘yicha qidirish..."
+                  aria-label="Model bo‘yicha qidirish"
+                  class="w-full min-h-[44px] pl-10 pr-4 py-2 rounded-lg bg-[#F4F4F6] border border-black/10 text-sm text-[#0B0B0D] placeholder:text-[#71717A] focus:outline-none focus:border-[#E24700] focus:bg-white transition-colors"
+                />
+              </div>
+
+              <select
+                id="catalog-sort"
+                aria-label="Saralash"
+                class="min-h-[44px] px-3.5 py-2 rounded-lg bg-[#F4F4F6] border border-black/10 text-sm font-medium text-[#0B0B0D] focus:outline-none focus:border-[#E24700] cursor-pointer"
+              >
+                <option value="featured">Tavsiya etilgan</option>
+                <option value="price-asc">Narx: arzondan qimmatga</option>
+                <option value="price-desc">Narx: qimmatdan arzonga</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Interactive Category Filter Tabs -->
+          <div class="flex items-center justify-between gap-4 pb-6 mb-8 border-b border-black/10 overflow-x-auto">
+            <div id="category-tabs" class="inline-flex items-center gap-1.5 p-1 bg-[#F4F4F6] rounded-xl shrink-0" role="tablist" aria-label="Mahsulot toifalari">
+              <!-- Populated dynamically by JS -->
+            </div>
+            <p id="catalog-count" class="text-xs text-[#52525B] tabular-nums whitespace-nowrap shrink-0">
+              0 ta mahsulot
+            </p>
+          </div>
+
+          <!-- Product Grid -->
+          <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Populated dynamically by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Xizmatlar va Ishonch (Dark Structural Band) -->
+      <section id="afzalliklar" class="bg-[#111113] text-white py-14 md:py-16 border-t border-white/10">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+          <div class="max-w-2xl mb-10">
+            <p class="text-xs font-semibold text-[#FF6B2B] mb-2">Nega Olov Mobil</p>
+            <h2 class="font-display text-2xl sm:text-3xl font-bold tracking-tight text-white">
+              Aniq narx, tezkor aloqa va shaffof buyurtma jarayoni
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-white/10">
+            <div>
+              <h3 class="font-display text-lg font-semibold text-white mb-2">
+                01. Tekshirilgan qurilmalar
+              </h3>
+              <p class="text-sm text-[#B4B4BC] leading-relaxed">
+                Har bir smartfon va aksessuar IMEI ro‘yxatidan o‘tgan, qadoqlangan holatda hamda 12 oylik rasmiy kafolat taloni bilan yetkaziladi.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-display text-lg font-semibold text-white mb-2">
+                02. Telegram kanalga jonli uzatish
+              </h3>
+              <p class="text-sm text-[#B4B4BC] leading-relaxed">
+                Onlayn savat orqali tasdiqlangan buyurtma shu zahoti operatorlarning Telegram kanaliga tushadi va siz bilan bog‘lanish vaqti 5 daqiqadan oshmaydi.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-display text-lg font-semibold text-white mb-2">
+                03. Moslashuvchan boshqaruv
+              </h3>
+              <p class="text-sm text-[#B4B4BC] leading-relaxed">
+                Do‘kon ma’muriyati admin panel orqali yangi modellarni qo‘shishi, narxlarni yangilashi va buyurtma holatini bir bosishda boshqarishi mumkin.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 4. Footer -->
+    <footer class="bg-[#0B0B0D] text-[#A1A1AA] border-t border-white/10 pb-20 md:pb-8">
+      <div class="max-w-[1200px] mx-auto px-4 sm:px-6 py-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div>
+          <p class="font-display text-base font-bold text-white mb-1">
+            OLOV <span class="text-[#FF5500]">MOBIL</span>
+          </p>
+          <p class="text-xs text-[#8E8E98]">
+            Toshkent sh., Amir Temur shoh ko‘chasi 42 · Har kuni 09:00–22:00
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center gap-6 text-xs">
+          <a href="#katalog" class="hover:text-white transition-colors">Katalog</a>
+          <button type="button" id="footer-menu-btn" class="hover:text-white transition-colors cursor-pointer">
+            Interaktiv menyu
+          </button>
+          <button type="button" id="footer-admin-btn" class="hover:text-white transition-colors cursor-pointer">
+            Admin panel
+          </button>
+          <span class="text-[#6E6E77]">© 2026 Olov Mobil</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Thumb-Zone Bottom Navigation Bar (< 768px) -->
+    <nav
+      class="md:hidden fixed bottom-0 left-0 right-0 z-40 h-14 bg-white/95 backdrop-blur-md border-t border-black/10 grid grid-cols-4 items-center"
+      aria-label="Mobil navigatsiya"
+    >
+      <a
+        href="#top"
+        class="min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-[#0B0B0D]"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9.5Z" />
+        </svg>
+        <span class="text-[10px] font-medium">Asosiy</span>
+      </a>
+      <button
+        type="button"
+        id="mobile-menu-btn"
+        class="min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-[#52525B] hover:text-[#0B0B0D] cursor-pointer"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="4" y1="7" x2="20" y2="7" />
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="17" x2="20" y2="17" />
+        </svg>
+        <span class="text-[10px] font-medium">Menyu</span>
+      </button>
+      <button
+        type="button"
+        id="mobile-cart-btn"
+        class="relative min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-[#E24700] cursor-pointer"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M6 7h12l-1 12H7L6 7Z" />
+          <path d="M9 7V5a3 3 0 0 1 6 0v2" />
+        </svg>
+        <span class="text-[10px] font-semibold">
+          Savat (<span id="mobile-cart-count" class="tabular-nums">0</span>)
+        </span>
+      </button>
+      <button
+        type="button"
+        id="mobile-admin-btn"
+        class="min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-[#52525B] hover:text-[#0B0B0D] cursor-pointer"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <rect x="3" y="4" width="18" height="16" rx="2" />
+          <path d="M3 10h18M9 10v10" />
+        </svg>
+        <span class="text-[10px] font-medium">Admin</span>
+      </button>
+    </nav>
+
+    <!-- Interactive Category Menu Drawer -->
+    <div id="menu-drawer" class="fixed inset-0 z-50 hidden" aria-hidden="true">
+      <div id="menu-backdrop" class="absolute inset-0 bg-black/55 backdrop-blur-xs"></div>
+      <aside class="relative w-full max-w-sm h-full bg-[#0B0B0D] text-white flex flex-col shadow-2xl">
+        <div class="px-6 py-5 border-b border-white/10 flex items-center justify-between">
+          <div>
+            <p class="text-xs text-[#FF6B2B] font-medium">Tezkor navigatsiya</p>
+            <h2 class="font-display text-lg font-bold">Interaktiv Menyu</h2>
+          </div>
+          <button
+            type="button"
+            id="close-menu-btn"
+            aria-label="Menyuni yopish"
+            class="min-w-[44px] min-h-[44px] rounded-lg border border-white/15 hover:border-white/40 flex items-center justify-center text-white cursor-pointer"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 6 6 18M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div id="menu-drawer-body" class="flex-1 overflow-y-auto p-6 space-y-6">
+          <!-- Populated dynamically by JS -->
+        </div>
+
+        <div class="p-6 border-t border-white/10">
+          <button
+            type="button"
+            id="menu-open-admin-btn"
+            class="w-full min-h-[46px] px-4 py-2.5 rounded-lg bg-white/10 hover:bg-white/15 text-white text-sm font-medium transition-colors cursor-pointer"
+          >
+            Admin panelga o‘tish
+          </button>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div id="product-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4" aria-hidden="true">
+      <div id="product-modal-backdrop" class="absolute inset-0 bg-black/60 backdrop-blur-xs"></div>
+      <div class="relative w-full max-w-2xl bg-white rounded-2xl overflow-hidden shadow-2xl border border-black/10 max-h-[90vh] flex flex-col">
+        <div id="product-modal-content" class="overflow-y-auto p-5 sm:p-6">
+          <!-- Populated dynamically by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart & Online Checkout Slide-Over Drawer -->
+    <div id="cart-drawer" class="fixed inset-0 z-50 hidden justify-end" aria-hidden="true">
+      <div id="cart-backdrop" class="absolute inset-0 bg-black/55 backdrop-blur-xs"></div>
+      <aside class="relative w-full max-w-md h-full bg-white text-[#0B0B0D] flex flex-col shadow-2xl">
+        <div class="px-5 sm:px-6 py-4 border-b border-black/10 flex items-center justify-between">
+          <div>
+            <h2 class="font-display text-lg font-bold">Savat va Buyurtma</h2>
+            <p id="cart-subtitle" class="text-xs text-[#52525B] tabular-nums">0 ta mahsulot tanlangan</p>
+          </div>
+          <button
+            type="button"
+            id="close-cart-btn"
+            aria-label="Savatni yopish"
+            class="min-w-[44px] min-h-[44px] rounded-lg border border-black/10 hover:bg-[#F4F4F6] flex items-center justify-center cursor-pointer"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 6 6 18M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div id="cart-drawer-body" class="flex-1 overflow-y-auto p-5 sm:p-6 space-y-6">
+          <!-- Populated dynamically by JS -->
+        </div>
+      </aside>
+    </div>
+
+    <!-- Admin Panel Modal -->
+    <div id="admin-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-2 sm:p-5" aria-hidden="true">
+      <div id="admin-backdrop" class="absolute inset-0 bg-black/70 backdrop-blur-xs"></div>
+      <div class="relative w-full max-w-5xl bg-white text-[#0B0B0D] rounded-2xl overflow-hidden shadow-2xl border border-black/15 max-h-[92vh] flex flex-col">
+        <div class="px-5 sm:px-6 py-4 bg-[#0B0B0D] text-white flex items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <span class="font-display text-base sm:text-lg font-bold tracking-tight">
+              OLOV <span class="text-[#FF5500]">ADMIN</span>
+            </span>
+            <span class="text-xs text-[#9E9EA8] hidden sm:inline">· Buyurtmalar va Katalog boshqaruvi</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <button
+              type="button"
+              id="admin-logout-btn"
+              class="hidden min-h-[38px] px-3 py-1.5 rounded-lg border border-white/20 hover:border-white/40 text-xs font-medium text-white cursor-pointer"
+            >
+              Chiqish
+            </button>
+            <button
+              type="button"
+              id="close-admin-btn"
+              aria-label="Admin panelni yopish"
+              class="min-w-[44px] min-h-[44px] rounded-lg border border-white/15 hover:border-white/40 flex items-center justify-center text-white cursor-pointer"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6 6 18M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div id="admin-modal-body" class="flex-1 overflow-y-auto p-5 sm:p-6 bg-[#FAFAFB]">
+          <!-- Populated dynamically by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Subtle Toast Container -->
+    <div
+      id="toast-region"
+      aria-live="polite"
+      class="fixed bottom-16 md:bottom-6 right-4 z-[60] flex flex-col gap-2 max-w-sm pointer-events-none"
+    ></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
